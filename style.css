@@ -35,7 +35,7 @@ h6 {
 
 p {
   font-size: 16px;
-  color: #465b52;
+  color: darkgrey;
   margin: 15px 0 20px 0;
 }
 
@@ -88,7 +88,8 @@ p {
   color: #142920;
 }
 
-#navbar li a.active::after , #navbar li a:hover::after{
+#navbar li a.active::after,
+#navbar li a:hover::after {
   content: "";
   color: #465b52;
   width: 30%;
@@ -100,36 +101,72 @@ p {
 }
 
 /* home page */
-#hero{
-
-    background: url("image/banner.webp");
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    background-position: top 25% right 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 0 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+#hero {
+  background: url("image/banner.webp");
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-position: top 25% right 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-#hero h4{
-   padding-bottom: 15px; 
+#hero h4 {
+  padding-bottom: 15px;
 }
-#hero h1{
-    color:#142920;
+#hero h1 {
+  color: #142920;
+}
+#hero button {
+  border-radius: 20px;
+  background-color: crimson;
+  color: #fff;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
 
+#features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-#hero button{
-    border-radius: 20px;
-    background-color:crimson;
-    color: #fff;
-    border: 0;
-    padding: 14px 80px 14px 65px;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 15px;
+
+#features .fe-box {
+  display: flex;
+  width: 20%;
+  text-align: center;
+  justify-content: space-evenly;
+  gap: 5px;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+#features .fe-box:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.01);
+}
+#features .fe-text .fe-box,
+.imageBox {
+  padding: 10px;
+}
+
+#features .fe-box .imageBox img {
+  margin-bottom: 10px;
+}
+#features .fe-box h6 {
+  padding: 9px 9px 9px 9px;
+  line-height: 1;
+  color: crimson;
+  background-color: #fddde486;
+  border-radius: 20px;
 }
