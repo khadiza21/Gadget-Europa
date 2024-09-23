@@ -667,3 +667,25 @@ footer .copyright {
     text-align: center;
   }
 }
+
+
+/* shop page */
+#page-header{
+ background-image: url('./image/shop/shopBanner-2.png');
+ width: 100%;
+ height: 40vh;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ padding: 14px;
+ flex-direction: column;
+
+}
+
+#page-header h2{
+  color: crimson;
+}
+#page-header p{
+  color: rgb(94, 94, 94);
+}
