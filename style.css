@@ -820,6 +820,9 @@ h2 {
 }
 
 /* Cart Page */
+#cart {
+  overflow-x: auto;
+}
 #cart table {
   width: 100%;
   border-collapse: collapse;
@@ -876,7 +879,8 @@ h2 {
   width: 50%;
   margin-bottom: 30px;
 }
-#coupon h3 , #subtotal h3{
+#coupon h3,
+#subtotal h3 {
   padding-bottom: 15px;
 }
 #coupon input {
@@ -887,7 +891,8 @@ h2 {
   margin-right: 10px;
   border: 1px solid #e2e9e1;
 }
-#coupon button {
+#coupon button,
+#subtotal button {
   background-color: #088178;
   color: #fff;
   padding: 12px 20px;
@@ -1117,5 +1122,17 @@ h2 {
   #form-details form {
     width: 100%;
     margin-bottom: 40px;
+  }
+
+  /* cart page */
+  #cart-add {
+    flex-direction: column;
+  }
+  #coupon {
+    width: 100%;
+  }
+  #subtotal {
+    width: 100%;
+    padding: 20px;
   }
 }
