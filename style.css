@@ -686,6 +686,26 @@ footer .copyright {
   z-index: -9;
 }
 
+/* about page */
+#page-header.about-header {
+  background-image: url(image/about/banner.jpg);
+  background-position: center center;
+}
+#about-head {
+  display: flex;
+  align-items: center;
+}
+#about-head img {
+  width: 50%;
+  height: auto;
+  border-radius: 5px;
+}
+#about-head div {
+  padding-left: 40px;
+}
+#about-head marquee{
+  margin-top: 30px;
+}
 @media (max-width: 799px) {
   .section-p1 {
     padding: 40px 40px;
@@ -845,14 +865,12 @@ footer .copyright {
     flex-direction: column;
     align-items: flex-start;
   }
-  #blog .blog-img{
+  #blog .blog-img {
     width: 100%;
     margin-right: 0px;
     margin-bottom: 30px;
   }
-  #blog .blog-details{
+  #blog .blog-details {
     width: 100%;
-   
   }
-
 }
